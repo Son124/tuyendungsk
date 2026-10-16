@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>SK Việt Nam - Tuyển Dụng Lao Động Phổ Thông Đi Làm Ngay | Đa Dạng Khu Vực</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #dc2626;       /* Đỏ SK uy tín & nhiệt huyết */
+      --primary-dark: #b91c1c;
+      --secondary: #1e3a8a;     /* Xanh navy bổ trợ tạo độ tin cậy */
+      --accent: #ea580c;        /* Cam nổi bật kích thích hành động */
+      --accent-hover: #c2410c;
+      --success: #16a34a;       /* Xanh lá an tâm, tin cậy */
+      --zalo: #0068ff;          /* Xanh Zalo chuẩn */
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      line-height: 1.6;
+      font-size: 16px;
+      padding-bottom: 75px; /* Chừa chỗ cho thanh nút cố định trên mobile */
+    }
+
+    /* TOP BANNER CAM KẾT */
+    .top-banner {
+      background: linear-gradient(90deg, #991b1b 0%, #dc2626 50%, #b91c1c 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .top-banner span {
+      background: rgba(255,255,255,0.25);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      text-transform: uppercase;
+    }
+
+    /* HEADER & LOGO SK VIỆT NAM */
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .logo-text h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.15;
+      letter-spacing: 0.5px;
+    }
+
+    .logo-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .header-hotline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fee2e2;
+      border: 1.5px solid #fca5a5;
+      padding: 8px 16px;
+      border-radius: 30px;
+      color: #b91c1c;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 15px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .header-hotline:hover {
+      background: #fecaca;
+      transform: scale(1.02);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #1e1b4b 0%, #1e3a8a 50%, #991b1b 100%);
+      color: var(--white);
+      padding: 45px 20px 65px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-container {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(220, 38, 38, 0.35);
+      border: 1px solid #f87171;
+      color: #fef2f2;
+      font-weight: 700;
+      font-size: 13.5px;
+      padding: 6px 18px;
+      border-radius: 30px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+
+    .hero-title-top {
+      display: block;
+      font-size: 22px;
+      letter-spacing: 1px;
+      opacity: 0.95;
+      margin-bottom: 4px;
+    }
+
+    .hero-title-highlight {
+      display: block;
+      color: #fde047;
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 6px;
+    }
+
+    .hero-title-sub {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 19px;
+      font-weight: 700;
+      color: #f8fafc;
+      flex-wrap: wrap;
+    }
+
+    .hero-title-sub .sub-sep {
+      color: #f87171;
+      font-weight: 900;
+    }
+
+    .hero-salary {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 16px 28px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .salary-label {
+      font-size: 14px;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .salary-range {
+      font-size: 32px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin: 4px 0;
+    }
+
+    .salary-sub {
+      font-size: 14px;
+      color: #f1f5f9;
+      font-weight: 500;
+    }
+
+    /* 2 NÚT CHÍNH TẠI HERO - SIÊU NỔI BẬT CHUYỂN ĐỔI (3D TACTILE CRO) */
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      max-width: 720px;
+      margin: 12px auto 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      border-radius: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+      flex: 1 1 290px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      user-select: none;
+    }
+
+    .btn .btn-main-text {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+
+    .btn .btn-arrow {
+      display: inline-block;
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover .btn-arrow {
+      transform: translateX(4px);
+    }
+
+    .btn .btn-sub-text {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 4px;
+      letter-spacing: 0.2px;
+      line-height: 1.2;
+    }
+
+    /* NÚT 1: ĐI LÀM NGAY (ĐỎ CAM LỬA 3D SIÊU NỔI BẬT) */
+    .btn-apply-now {
+      background: linear-gradient(135deg, #ff5722 0%, #ea580c 50%, #c2410c 100%);
+      color: #ffffff !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 0 #9a3412, 0 12px 24px rgba(234, 88, 12, 0.45);
+      animation: pulseApply 2.6s infinite ease-in-out;
+    }
+
+    .btn-apply-now .btn-sub-text {
+      color: #fef08a; /* Vàng nắng kích thích hành động */
+    }
+
+    .btn-apply-now:hover {
+      background: linear-gradient(135deg, #ff6a3d 0%, #f97316 50%, #ea580c 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 #9a3412, 0 16px 28px rgba(234, 88, 12, 0.55);
+    }
+
+    .btn-apply-now:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #9a3412, 0 4px 10px rgba(234, 88, 12, 0.3);
+    }
+
+    @keyframes pulseApply {
+      0%, 100% {
+        box-shadow: 0 6px 0 #9a3412, 0 10px 22px rgba(234, 88, 12, 0.4);
+      }
+      50% {
+        box-shadow: 0 6px 0 #9a3412, 0 14px 32px rgba(255, 87, 34, 0.7);
+      }
+    }
+
+    /* NÚT 2: TƯ VẤN QUA ZALO (XANH ZALO 3D KHỐI NỔI ĐẬM NÉT) */
+    .btn-zalo {
+      background: linear-gradient(135deg, #0084ff 0%, #0068ff 50%, #0052cc 100%);
+      color: #ffffff !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 0 #003d99, 0 12px 24px rgba(0, 104, 255, 0.4);
+    }
+
+    .btn-zalo .btn-sub-text {
+      color: #e0f2fe; /* Xanh băng tuyết dịu mắt */
+    }
+
+    .btn-zalo:hover {
+      background: linear-gradient(135deg, #1a8fff 0%, #0072ff 50%, #005ce6 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 #003d99, 0 16px 28px rgba(0, 104, 255, 0.5);
+    }
+
+    .btn-zalo:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #003d99, 0 4px 10px rgba(0, 104, 255, 0.3);
+    }
+
+    /* THANH BẢO CHỨNG UY TÍN (TRUST BAR) */
+    .trust-bar {
+      max-width: 1100px;
+      margin: -35px auto 40px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .trust-grid {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      border: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 850px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 16px;
+      }
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #fee2e2;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .trust-info h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .trust-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* CONTAINER CHUNG */
+    .section-container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* CÁC VỊ TRÍ ĐANG TUYỂN */
+    .job-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    .job-card {
+      background: var(--white);
+      border-radius: 18px;
+      border: 1.5px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .job-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #cbd5e1;
+    }
+
+    .job-card-header {
+      background: #f8fafc;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .job-badge {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    .badge-thoivu {
+      background: #fef3c7;
+      color: #b45309;
+      border: 1px solid #fde68a;
+    }
+
+    .badge-chinhthuc {
+      background: #dbeafe;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .job-salary-tag {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+
+    .job-card-body {
+      padding: 24px;
+      flex-grow: 1;
+    }
+
+    .job-title {
+      font-size: 21px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #0f172a;
+      line-height: 1.35;
+    }
+
+    .job-info-block {
+      margin-bottom: 14px;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .info-label {
+      font-weight: 700;
+      color: #334155;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .info-val {
+      color: #475569;
+    }
+
+    .job-sub-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 14px 0;
+    }
+
+    .job-sub-box.blue {
+      border-left-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .job-sub-box.amber {
+      border-left-color: #d97706;
+      background: #fffbeb;
+    }
+
+    .job-sub-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+
+    .job-detail-list {
+      list-style: none;
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .job-detail-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .job-detail-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-detail-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .job-card-footer {
+      padding: 18px 24px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .btn-apply-card {
+      width: 100%;
+      background: linear-gradient(180deg, #ea580c 0%, #c2410c 100%);
+      color: var(--white);
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 800;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 3px 6px rgba(234, 88, 12, 0.25);
+      transition: all 0.2s;
+    }
+
+    .btn-apply-card:hover {
+      background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+      transform: translateY(-2px);
+    }
+
+    /* BỘ LỌC VIỆC LÀM ĐA NĂNG & GIAO DIỆN NÂNG CẤP SK VIỆT NAM */
+    .job-filter-wrapper {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 22px 20px;
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+      margin-bottom: 30px;
+    }
+
+    .filter-search-box {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .filter-search-input {
+      width: 100%;
+      padding: 13px 18px 13px 46px;
+      font-size: 15.5px;
+      border-radius: 12px;
+      border: 1.5px solid #cbd5e1;
+      background: #f8fafc;
+      color: var(--text-main);
+      transition: all 0.2s;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    .filter-search-input:focus {
+      outline: none;
+      background: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+    }
+
+    .filter-search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #64748b;
+      pointer-events: none;
+    }
+
+    .filter-group {
+      margin-bottom: 15px;
+    }
+
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-group-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .filter-group-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #334155;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .filter-chips-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-chips-scroll::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .filter-chips-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    .filter-chip-btn {
+      background: #f1f5f9;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 30px;
+      padding: 8px 14px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #475569;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      font-family: inherit;
+    }
+
+    .filter-chip-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+      border-color: #cbd5e1;
+    }
+
+    .filter-chip-btn.active {
+      background: #fee2e2;
+      color: #991b1b;
+      border-color: #dc2626;
+      box-shadow: 0 2px 6px rgba(220, 38, 38, 0.18);
+    }
+
+    .filter-chip-btn .chip-count {
+      font-size: 11px;
+      padding: 2px 7px;
+      background: rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    .filter-chip-btn.active .chip-count {
+      background: #dc2626;
+      color: #ffffff;
+    }
+
+    .filter-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px 16px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      margin-top: 14px;
+    }
+
+    .filter-status-count {
+      font-size: 14.5px;
+      color: #1e40af;
+      font-weight: 700;
+    }
+
+    .filter-status-count strong {
+      font-size: 17px;
+      color: #1d4ed8;
+    }
+
+    .btn-reset-filters {
+      background: #ffffff;
+      border: 1px solid #93c5fd;
+      color: #1d4ed8;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+
+    .btn-reset-filters:hover {
+      background: #dbeafe;
+    }
+
+    /* BADGES VÀ THẺ CẢI TIẾN */
+    .badge-both {
+      background: #ede9fe;
+      color: #6d28d9;
+      border: 1px solid #ddd6fe;
+    }
+
+    .badge-status-open {
+      background: #dcfce7;
+      color: #15803d;
+      border: 1px solid #bbf7d0;
+    }
+
+    .badge-status-closed {
+      background: #f1f5f9;
+      color: #64748b;
+      border: 1px solid #e2e8f0;
+    }
+
+    .badge-region {
+      background: #f3e8ff;
+      color: #6b21a8;
+      border: 1px solid #e9d5ff;
+    }
+
+    .job-bonus-tag {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border: 1px solid #f59e0b;
+      color: #92400e;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+
+    .job-card-footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 10px;
+      padding: 16px 20px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .btn-zalo-card {
+      background: #0068ff;
+      color: #ffffff;
+      padding: 13px 12px;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-zalo-card:hover {
+      background: #0056d6;
+      transform: translateY(-2px);
+    }
+
+    .load-more-container {
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+
+    .btn-load-more {
+      background: #ffffff;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-size: 15.5px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: inherit;
+    }
+
+    .btn-load-more:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(220, 38, 38, 0.25);
+    }
+
+    .no-jobs-found {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 20px;
+      background: #f8fafc;
+      border-radius: 16px;
+      border: 2px dashed #cbd5e1;
+    }
+
+    .no-jobs-found h4 {
+      font-size: 18px;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+
+    .no-jobs-found p {
+      color: #64748b;
+      font-size: 14.5px;
+      margin-bottom: 16px;
+    }
+
+    /* QUY TRÌNH 3 BƯỚC */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .step-box {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid var(--border-color);
+      position: relative;
+      text-align: center;
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 auto 16px;
+    }
+
+    .step-box h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step-box p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* KHU VỰC 2 HÌNH THỨC CHUYỂN ĐỔI */
+    .dual-action-section {
+      background: #eff6ff;
+      border-top: 2px dashed #bfdbfe;
+      border-bottom: 2px dashed #bfdbfe;
+      padding: 50px 20px;
+    }
+
+    .dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* NHÁNH 1: TƯ VẤN ZALO */
+    .consult-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px 24px;
+      border: 2px solid #bfdbfe;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .consult-header .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #0369a1;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .consult-header h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .consult-header p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .consult-features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .consult-features li {
+      font-size: 14px;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .consult-features li:last-child {
+      margin-bottom: 0;
+    }
+
+    .btn-zalo-big {
+      background: #0068ff;
+      color: var(--white);
+      padding: 18px 24px;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      box-shadow: 0 4px 14px rgba(0, 104, 255, 0.35);
+      transition: all 0.2s;
+    }
+
+    .btn-zalo-big:hover {
+      background: #0056d6;
+      transform: translateY(-2px);
+    }
+
+    /* NHÁNH 2: FORM ĐI LÀM NGAY */
+    .form-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px 28px;
+      border: 2px solid #fdba74;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .form-ribbon {
+      position: absolute;
+      top: -14px;
+      left: 28px;
+      background: linear-gradient(90deg, #ea580c 0%, #c2410c 100%);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      box-shadow: var(--shadow-md);
+      text-transform: uppercase;
+    }
+
+    .form-header {
+      margin-top: 10px;
+      margin-bottom: 22px;
+    }
+
+    .form-header h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #9a3412;
+      line-height: 1.3;
+    }
+
+    .form-header p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .form-group label .required {
+      color: #dc2626;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 16px; /* Bắt buộc 16px để ngăn iOS auto-zoom */
+      color: var(--text-main);
+      background-color: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+    }
+
+    /* SELECT CÔNG TY ỨNG TUYỂN & CHIPS CHỌN NHANH */
+    .company-select-box {
+      background: #fef2f2;
+      border: 1.5px solid #fecaca;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 18px;
+    }
+
+    .company-select-box label {
+      color: #991b1b;
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .company-chips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .company-chip-btn {
+      background: var(--white);
+      border: 1.5px solid #cbd5e1;
+      padding: 11px 12px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 44px; /* Chuẩn touch target */
+    }
+
+    .company-chip-btn:hover {
+      border-color: var(--primary);
+      background: #fff1f2;
+    }
+
+    .company-chip-btn.active {
+      border-color: var(--primary);
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+    }
+
+    .highlight-pulse {
+      animation: pulseBorder 1.5s ease-in-out;
+    }
+
+    @keyframes pulseBorder {
+      0%, 100% { border-color: #cbd5e1; box-shadow: none; }
+      50% { border-color: #dc2626; box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.3); }
+    }
+
+    /* GHI CHÚ BẢO MẬT CCCD ĐẶT NGAY DƯỚI Ô NHẬP CCCD */
+    .cccd-security-note {
+      font-size: 13px;
+      color: #334155;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-left: 3.5px solid #0284c7;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      line-height: 1.45;
+    }
+
+    .cccd-security-note .note-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* HỆ THỐNG BỘ LỊCH CHUYÊN DỤNG (TỐI ƯU TRẢI NGHIỆM CHO MOBILE & WEB) */
+    .date-picker-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .date-input-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .date-input-col {
+      flex: 1;
+    }
+
+    .custom-date-trigger {
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .custom-date-trigger input {
+      cursor: pointer !important;
+      padding-left: 42px !important;
+      background-color: #ffffff !important;
+      font-weight: 700;
+      color: #0f172a;
+      border: 1.5px solid #cbd5e1;
+    }
+
+    .custom-date-trigger input:hover {
+      border-color: #dc2626;
+    }
+
+    .custom-date-trigger .cal-icon-prefix {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      pointer-events: none;
+    }
+
+    .date-preview-badge {
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+      color: #1e40af;
+      padding: 6px 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 105px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .date-preview-badge .badge-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #3b82f6;
+      line-height: 1;
+    }
+
+    .date-preview-badge strong {
+      font-size: 13.5px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .date-quick-pills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      padding-top: 10px;
+      border-top: 1px dashed #cbd5e1;
+    }
+
+    .date-pill-btn {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 8px 4px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .date-pill-btn:hover, .date-pill-btn:active {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-color: #93c5fd;
+    }
+
+    /* MODAL LỊCH CHUYÊN DỤNG (HIỂN THỊ CHUẨN ĐẸP TRÊN MỌI DÒNG ĐIỆN THOẠI) */
+    .calendar-modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .calendar-modal-overlay.active {
+      display: flex;
+    }
+
+    .calendar-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: calPopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e2e8f0;
+    }
+
+    @keyframes calPopIn {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .calendar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 18px 12px;
+      border-bottom: 1px solid #f1f5f9;
+      background: #ffffff;
+    }
+
+    .calendar-month-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .calendar-nav-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      color: #334155;
+      font-size: 16px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .calendar-nav-btn:hover {
+      background: #fee2e2;
+      color: #dc2626;
+      border-color: #fca5a5;
+    }
+
+    .calendar-weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 12px 14px 6px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+    }
+
+    .calendar-days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+      padding: 4px 14px 16px;
+    }
+
+    .cal-day-cell {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #1e293b;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .cal-day-cell:hover:not(.disabled):not(.empty) {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+
+    .cal-day-cell.today {
+      border: 1.5px solid #dc2626;
+      font-weight: 800;
+    }
+
+    .cal-day-cell.selected {
+      background: #dc2626 !important;
+      color: #ffffff !important;
+      font-weight: 800;
+      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.4);
+      transform: scale(1.06);
+    }
+
+    .cal-day-cell.disabled {
+      color: #cbd5e1;
+      cursor: not-allowed;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .cal-day-cell.empty {
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ĐÁY LỊCH: ĐẶT LẠI VÀ XONG NẰM NGANG NHAU CHUẨN ĐẸP */
+    .calendar-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px 14px;
+      border-top: 1px solid #f1f5f9;
+      background: #f8fafc;
+    }
+
+    .btn-cal-reset {
+      background: none;
+      border: none;
+      color: #64748b;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.15s;
+    }
+
+    .btn-cal-reset:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .btn-cal-done {
+      background: #16a34a;
+      border: 1.5px solid #15803d;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      padding: 8px 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
+      transition: all 0.15s;
+    }
+
+    .btn-cal-done:hover, .btn-cal-done:active {
+      background: #15803d;
+      box-shadow: 0 4px 10px rgba(22, 163, 74, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* HỆ THỐNG CHỌN GIỜ ĐỊNH DẠNG 24H (TỪ 08:00 ĐẾN 17:00) */
+    .time-24h-picker-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .time-select-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .time-select-col {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .time-col-title {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      color: #475569;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    /* KHUNG HIỂN THỊ CHỌN GIỜ TRỰC QUAN (CHỮ ĐẬM 100%, KHÔNG BAO GIỜ BỊ ẨN TRÊN IOS/ANDROID) */
+    .time-picker-custom-btn {
+      position: relative;
+      background: #ffffff;
+      border: 1.5px solid #94a3b8;
+      border-radius: 10px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .time-picker-custom-btn:hover {
+      border-color: #dc2626;
+      background: #fff1f2;
+    }
+
+    .time-btn-val {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a !important;
+      -webkit-text-fill-color: #0f172a !important;
+      text-align: center;
+      flex: 1;
+      letter-spacing: 0.5px;
+    }
+
+    .time-btn-arrow {
+      font-size: 13px;
+      color: #64748b;
+      margin-left: 2px;
+    }
+
+    .time-native-select {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      -webkit-appearance: none;
+      z-index: 2;
+    }
+
+    .time-sep {
+      font-size: 22px;
+      font-weight: 900;
+      color: #64748b;
+      padding-bottom: 12px;
+      flex-shrink: 0;
+    }
+
+    .time-preview-badge {
+      background: #fee2e2;
+      border: 1.5px solid #fecaca;
+      color: #991b1b;
+      padding: 6px 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 82px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .time-preview-badge .badge-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #b91c1c;
+      line-height: 1;
+    }
+
+    .time-preview-badge strong {
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #991b1b !important;
+      -webkit-text-fill-color: #991b1b !important;
+    }
+
+    .time-hint {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 8px;
+    }
+
+    .time-quick-pills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #cbd5e1;
+    }
+
+    .time-pill-btn {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 7px 4px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+
+    .time-pill-btn:hover, .time-pill-btn:active {
+      background: #fee2e2;
+      color: #dc2626;
+      border-color: #f87171;
+    }
+
+    .btn-submit-form {
+      width: 100%;
+      background: linear-gradient(180deg, #ea580c 0%, #c2410c 100%);
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      padding: 16px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.4);
+      transition: all 0.2s;
+      margin-top: 6px;
+    }
+
+    .btn-submit-form:hover {
+      background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER & THÔNG TIN SK VIỆT NAM */
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 40px 20px 20px;
+      font-size: 14px;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-brand h4 {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-info-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-info-item a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #334155;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    /* THANH NÚT NỔI DÍNH GÓC MÀN HÌNH (ẨN Ở ĐẦU TRANG ĐỂ TRÁNH TRÙNG LẶP NÚT, CHỈ HIỆN KHI CUỘN XUỐNG) */
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--white);
+      box-shadow: 0 -4px 14px rgba(0,0,0,0.14);
+      padding: 8px 14px;
+      display: flex;
+      gap: 10px;
+      z-index: 9999;
+      transform: translateY(115%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-bottom-bar.is-visible {
+      transform: translateY(0);
+    }
+
+    .mobile-bottom-bar .btn-mobile {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-mobile-zalo {
+      background: #0068ff;
+      color: var(--white);
+    }
+
+    .btn-mobile-apply {
+      background: #ea580c;
+      color: var(--white);
+    }
+
+    /* MODAL THÔNG BÁO NỘP THÀNH CÔNG */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-box {
+      background: var(--white);
+      max-width: 480px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-icon {
+      width: 72px;
+      height: 72px;
+      background: #dcfce7;
+      color: #16a34a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 16px;
+    }
+
+    .modal-box h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .modal-box p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .modal-details {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .modal-details p {
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .btn-close-modal {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    @media (min-width: 769px) {
+      .mobile-bottom-bar {
+        display: none;
+      }
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    /* =========================================================================
+       TỐI ƯU HÓA ĐẶC BIỆT DÀNH RIÊNG CHO MÀN HÌNH ĐIỆN THOẠI (MOBILE RESPONSIVE)
+       ========================================================================= */
+    @media (max-width: 768px) {
+      .dual-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .job-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 15px;
+      }
+      .top-banner {
+        font-size: 12px;
+        padding: 8px 12px;
+        line-height: 1.4;
+      }
+      .nav-container {
+        padding: 8px 14px;
+      }
+      .logo-img {
+        height: 40px;
+      }
+      .logo-text h1 {
+        font-size: 17px;
+      }
+      .logo-text p {
+        font-size: 11px;
+      }
+      .header-hotline {
+        padding: 6px 12px;
+        font-size: 13px;
+        border-radius: 20px;
+      }
+      .hero {
+        padding: 30px 14px 45px;
+      }
+      .hero-tag {
+        font-size: 12px;
+        padding: 4px 12px;
+        margin-bottom: 12px;
+      }
+      .hero-title {
+        font-size: 20px;
+        line-height: 1.25;
+        margin-bottom: 12px;
+      }
+      .hero-title-top {
+        font-size: 16px;
+        margin-bottom: 2px;
+      }
+      .hero-title-highlight {
+        font-size: 23px;
+        white-space: nowrap;
+        margin-bottom: 4px;
+      }
+      .hero-title-sub {
+        font-size: 14px;
+        gap: 6px;
+      }
+      .hero-salary {
+        padding: 10px 14px;
+        margin-bottom: 16px;
+        width: 100%;
+      }
+      .salary-range {
+        font-size: 24px;
+      }
+      .salary-sub {
+        font-size: 12px;
+        line-height: 1.35;
+      }
+      .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .btn {
+        padding: 14px 20px;
+        font-size: 16px;
+        width: 100%;
+        flex: none;
+      }
+      .trust-bar {
+        margin: -25px auto 25px;
+        padding: 0 12px;
+      }
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 14px 10px;
+      }
+      .trust-item {
+        gap: 8px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .trust-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+      }
+      .trust-info h4 {
+        font-size: 13px;
+      }
+      .trust-info p {
+        font-size: 11.5px;
+        line-height: 1.3;
+      }
+      .section-container {
+        padding: 28px 14px;
+      }
+      .section-header {
+        margin-bottom: 24px;
+      }
+      .section-header h2 {
+        font-size: 21px;
+        line-height: 1.3;
+      }
+      .section-header p {
+        font-size: 13.5px;
+      }
+      .job-card-header {
+        padding: 14px 16px;
+      }
+      .job-card-body {
+        padding: 18px 16px;
+      }
+      .job-title {
+        font-size: 18px;
+      }
+      .job-info-block {
+        font-size: 13.5px;
+        margin-bottom: 10px;
+      }
+      .job-sub-box {
+        padding: 10px 12px;
+        margin: 10px 0;
+      }
+      .job-sub-title {
+        font-size: 13.5px;
+      }
+      .job-detail-list {
+        font-size: 13px;
+      }
+      .job-card-footer {
+        padding: 14px 16px;
+      }
+      .btn-apply-card {
+        padding: 12px;
+        font-size: 15px;
+      }
+      .step-box {
+        padding: 18px 14px;
+      }
+      .step-number {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+      .step-box h4 {
+        font-size: 15.5px;
+      }
+      .step-box p {
+        font-size: 13px;
+      }
+      .dual-action-section {
+        padding: 30px 12px;
+      }
+      .consult-card {
+        padding: 24px 16px;
+      }
+      .consult-header h3 {
+        font-size: 20px;
+      }
+      .consult-features {
+        padding: 12px;
+        margin-bottom: 20px;
+      }
+      .consult-features li {
+        font-size: 13px;
+      }
+      .btn-zalo-big {
+        padding: 14px 18px;
+        font-size: 16px;
+      }
+      .form-card {
+        padding: 26px 14px 20px;
+      }
+      .form-ribbon {
+        left: 14px;
+        font-size: 11.5px;
+        padding: 4px 12px;
+      }
+      .form-header h3 {
+        font-size: 20px;
+      }
+      .form-header p {
+        font-size: 13px;
+      }
+      .company-select-box {
+        padding: 12px;
+      }
+      .company-chips-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .company-chip-btn {
+        padding: 10px 12px;
+        font-size: 13.5px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .time-quick-pills {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .time-pill-btn {
+        padding: 6px 2px;
+        font-size: 12px;
+      }
+      .modal-box {
+        padding: 24px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BANNER BẢO CHỨNG -->
+  <div class="top-banner">
+    <span>CAM KẾT TỪ SK VIỆT NAM</span>
+    Trực tiếp phỏng vấn nhận việc • Hoàn toàn KHÔNG THU PHÍ • Không cọc bất kỳ khoản nào!
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo-badge">
+        <img src="logo_sk.webp" alt="SK Việt Nam" class="logo-img" onerror="this.src='https://sk-hr.com.vn/wp-content/uploads/2024/09/Logo-1.webp'">
+        <div class="logo-text">
+          <h1>SK VIỆT NAM</h1>
+          <p>Cung Ứng Nhân Lực & Tuyển Dụng</p>
+        </div>
+      </a>
+      <a href="tel:0972642218" class="header-hotline">
+        <span>📞 Hotline: 0972 642 218</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-tag">🔥 SK VIỆT NAM TUYỂN GẤP 300+ LAO ĐỘNG ĐI LÀM NGAY TUẦN NÀY</div>
+      <h2 class="hero-title">
+        <span class="hero-title-top">TUYỂN DỤNG</span>
+        <highlight class="hero-title-highlight">LAO ĐỘNG PHỔ THÔNG</highlight>
+      </h2>
+
+      <div class="hero-salary">
+        <span class="salary-label">MỨC THU NHẬP BÌNH QUÂN TỪ</span>
+        <span class="salary-range">8.000.000đ - 15.000.000đ</span>
+        <span class="salary-sub">★ Không cọc, không phí, việc làm như ý cùng SK</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#form-dang-ky" class="btn btn-apply-now">
+          <span class="btn-main-text">✍️ ĐI LÀM NGAY (ĐIỀN HỒ SƠ) <span class="btn-arrow">➔</span></span>
+          <span class="btn-sub-text">⚡ Mất 1 phút • Giữ chỗ phỏng vấn sớm</span>
+        </a>
+        <a href="https://zalo.me/0972642218" target="_blank" class="btn btn-zalo">
+          <span class="btn-main-text">💬 CẦN TƯ VẤN QUA ZALO <span class="btn-arrow">➔</span></span>
+          <span class="btn-sub-text">🟢 Online 24/7 • Giải đáp miễn phí ngay</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THANH BẢO CHỨNG UY TÍN (TRUST BAR) -->
+  <div class="trust-bar">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-info">
+          <h4>Không Mất Phí</h4>
+          <p>Tuyệt đối không đóng tiền, không giữ giấy tờ gốc</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💰</div>
+        <div class="trust-info">
+          <h4>Lương Đúng Ngày</h4>
+          <p>Nhận lương đúng cam kết, có hỗ trợ tạm ứng</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📜</div>
+        <div class="trust-info">
+          <h4>Ký HĐ & Đóng BHXH</h4>
+          <p>Đầy đủ chế độ quyền lợi theo chuẩn Nhà nước</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KHU VỰC GIỚI THIỆU VIỆC LÀM & BỘ LỌC ĐA NĂNG -->
+  <section class="section-container" id="danh-sach-vi-tri">
+    <div class="section-header">
+      <h2>DANH SÁCH TẤT CẢ VỊ TRÍ VIỆC LÀM TẠI SK VIỆT NAM</h2>
+      <p>Tổng hợp 80+ công việc đi làm ngay tại Hải Phòng, Hà Nội, Hải Dương, Bắc Ninh, Hưng Yên... Hoàn toàn KHÔNG THU PHÍ!</p>
+    </div>
+
+    <!-- BỘ LỌC TÌM KIẾM VIỆC LÀM THÔNG MINH -->
+    <div class="job-filter-wrapper">
+      <!-- Ô TÌM KIẾM NHANH -->
+      <div class="filter-search-box">
+        <span class="filter-search-icon">🔍</span>
+        <input type="text" id="jobSearchInput" class="filter-search-input" placeholder="Tìm theo tên công ty (Foxconn, Pegatron, SEI, Canon...), khu công nghiệp, vị trí..." oninput="handleSearchInput()">
+      </div>
+
+      <!-- LỌC THEO HÌNH THỨC -->
+      <div class="filter-group">
+        <div class="filter-group-header">
+          <span class="filter-group-title">📋 Hình Thức Làm Việc:</span>
+        </div>
+        <div class="filter-chips-scroll" id="typeFilterChips">
+          <button type="button" class="filter-chip-btn active" data-type="all" onclick="filterByType('all')">
+            <span>Tất cả hình thức</span>
+            <span class="chip-count" id="countTypeAll">83</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-type="Thời Vụ" onclick="filterByType('Thời Vụ')">
+            <span>⚡ Thời vụ (Lương tuần / ngày)</span>
+            <span class="chip-count" id="countTypeThoiVu">47</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-type="Chính Thức" onclick="filterByType('Chính Thức')">
+            <span>⭐ Chính thức (Đóng BHXH, KTX)</span>
+            <span class="chip-count" id="countTypeChinhThuc">41</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- LỌC THEO KHU VỰC (TỈNH / THÀNH PHỐ) -->
+      <div class="filter-group">
+        <div class="filter-group-header">
+          <span class="filter-group-title">📍 Khu Vực (Tỉnh / Thành Phố):</span>
+        </div>
+        <div class="filter-chips-scroll" id="regionFilterChips">
+          <button type="button" class="filter-chip-btn active" data-region="all" onclick="filterByRegion('all')">
+            <span>Tất cả khu vực</span>
+            <span class="chip-count" id="countRegionAll">83</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Hải Phòng" onclick="filterByRegion('Hải Phòng')">
+            <span>Hải Phòng</span>
+            <span class="chip-count">30</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Hải Dương" onclick="filterByRegion('Hải Dương')">
+            <span>Hải Dương</span>
+            <span class="chip-count">17</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Hà Nội" onclick="filterByRegion('Hà Nội')">
+            <span>Hà Nội</span>
+            <span class="chip-count">14</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Hưng Yên" onclick="filterByRegion('Hưng Yên')">
+            <span>Hưng Yên</span>
+            <span class="chip-count">10</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Hà Nam" onclick="filterByRegion('Hà Nam')">
+            <span>Hà Nam</span>
+            <span class="chip-count">6</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Bắc Ninh" onclick="filterByRegion('Bắc Ninh')">
+            <span>Bắc Ninh</span>
+            <span class="chip-count">3</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Quảng Ninh" onclick="filterByRegion('Quảng Ninh')">
+            <span>Quảng Ninh</span>
+            <span class="chip-count">2</span>
+          </button>
+          <button type="button" class="filter-chip-btn" data-region="Thái Bình" onclick="filterByRegion('Thái Bình')">
+            <span>Thái Bình</span>
+            <span class="chip-count">1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- THANH TRẠNG THÁI & KẾT QUẢ TÌM KIẾM -->
+      <div class="filter-status-bar">
+        <div class="filter-status-count">
+          <span>Tìm thấy: </span>
+          <strong id="filteredCountText">60</strong>
+          <span> vị trí phù hợp</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <label style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 700; color: #1e293b; cursor: pointer;">
+            <input type="checkbox" id="onlyActiveJobsCheckbox" checked onchange="toggleOnlyActive(this.checked)">
+            <span>Chỉ hiện việc đang tuyển gấp</span>
+          </label>
+          <button type="button" class="btn-reset-filters" id="btnResetFilters" onclick="resetAllFilters()">
+            🔄 Đặt lại bộ lọc
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KHU VỰC HIỂN THỊ CÁC THẺ JOB CARD (RENDER ĐỘNG QUA JAVASCRIPT) -->
+    <div class="job-cards" id="jobsContainer">
+      <!-- JavaScript sẽ tự động render các Job Card ở đây -->
+    </div>
+
+    <!-- NÚT XEM THÊM CÁC VỊ TRÍ KHÁC -->
+    <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+      <button type="button" class="btn-load-more" onclick="loadMoreJobs()">
+        <span>Xem thêm các vị trí việc làm khác ▾</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- QUY TRÌNH 3 BƯỚC ĐI LÀM -->
+  <section style="background: #f1f5f9; padding: 40px 20px;">
+    <div class="section-container" style="padding: 0;">
+      <div class="section-header">
+        <h2>QUY TRÌNH 3 BƯỚC NHẬN VIỆC CỰC KỲ ĐƠN GIẢN</h2>
+        <p>Minh bạch, rõ ràng - Không thủ tục rườm rà tại SK Việt Nam</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-box">
+          <div class="step-number">1</div>
+          <h4>Điền Form Hoặc Nhắn Zalo</h4>
+          <p>Chọn công ty muốn làm và chọn khung giờ bạn rảnh nhất để đến phỏng vấn.</p>
+        </div>
+        <div class="step-box">
+          <div class="step-number">2</div>
+          <h4>Phỏng Vấn & Nhận Việc</h4>
+          <p>Gặp trực tiếp cán bộ tuyển dụng SK Việt Nam trao đổi công việc, biết kết quả ngay.</p>
+        </div>
+        <div class="step-box">
+          <div class="step-number">3</div>
+          <h4>Đi Làm Ngay Hôm Sau</h4>
+          <p>Ký kết hợp đồng rõ ràng, nhận phòng KTX hoặc tuyến xe đưa đón và đi làm ngay!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KHU VỰC CHUYỂN ĐỔI CHÍNH (2 HÌNH THỨC RÕ RÀNG) -->
+  <section class="dual-action-section" id="khu-vuc-dang-ky">
+    <div class="dual-grid">
+
+      <!-- HÌNH THỨC 1: TƯ VẤN THÊM QUA ZALO -->
+      <div class="consult-card">
+        <div class="consult-header">
+          <span class="badge">HÌNH THỨC 1</span>
+          <h3>BẠN CẦN TƯ VẤN THÊM?</h3>
+          <p>Bạn chưa rõ về chế độ, phân vân giữa thời vụ hay chính thức? Nhắn tin ngay cho cán bộ tuyển dụng SK Việt Nam để được tư vấn chu đáo nhất!</p>
+        </div>
+
+        <ul class="consult-features">
+          <li>
+            <span style="color: #16a34a; font-weight: bold;">✔</span> 
+            <span>Giải đáp chi tiết 24/7, nhiệt tình, tận tâm</span>
+          </li>
+          <li>
+            <span style="color: #16a34a; font-weight: bold;">✔</span> 
+            <span>Gửi hình ảnh thực tế nhà xưởng & môi trường làm việc qua Zalo</span>
+          </li>
+          <li>
+            <span style="color: #16a34a; font-weight: bold;">✔</span> 
+            <span>Hoàn toàn miễn phí, hỗ trợ đón từ bến xe</span>
+          </li>
+        </ul>
+
+        <div>
+          <a href="https://zalo.me/0972642218" target="_blank" class="btn-zalo-big">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.42 3.84 7.08L5 22l4.16-1.39C10.05 20.85 11 21 12 21c5.52 0 10-4.03 10-9s-4.48-9-10-9zm0 16c-.85 0-1.68-.13-2.45-.37l-.42-.13-2.47.82.8-2.37-.16-.38C6.42 14.54 6 13.32 6 12c0-3.86 3.58-7 8-7s8 3.14 8 7-3.58 7-8 7z"/>
+            </svg>
+            <span>NHẮN ZALO TƯ VẤN NGAY</span>
+          </a>
+          <p style="font-size: 14px; color: var(--text-muted); margin-top: 10px;">
+            Hotline / Zalo Tuyển Dụng: <strong>0972 642 218</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- HÌNH THỨC 2: CHẮC CHẮN ĐI LÀM NGAY (ĐIỀN FORM) -->
+      <div class="form-card" id="form-dang-ky">
+        <div class="form-ribbon">HÌNH THỨC 2: ĐI LÀM NGAY</div>
+        
+        <div class="form-header">
+          <h3>ĐIỀN HỒ SƠ GIỮ CHỖ PHỎNG VẤN</h3>
+          <p>Điền thông tin bên dưới để cán bộ tuyển dụng SK Việt Nam sắp xếp lịch tiếp đón chu đáo:</p>
+        </div>
+
+        <form id="recruitmentForm" onsubmit="handleFormSubmit(event)">
+
+          <!-- MỤC CÔNG TY ỨNG TUYỂN (4 LỰA CHỌN) -->
+          <div class="company-select-box">
+            <label for="targetCompany">
+              🏢 Chọn Công ty ứng tuyển: <span class="required">*</span>
+            </label>
+            <select id="targetCompany" class="form-control" required onchange="handleSelectChange(this.value)">
+              <option value="">-- Bấm vào đây để chọn công ty muốn ứng tuyển (80+ vị trí) --</option>
+              <option value="Pegatron - Thời Vụ (Hải Phòng)">1. Pegatron - Thời vụ (Hải Phòng)</option>
+              <option value="Pegatron - Chính Thức (Hải Phòng)">2. Pegatron - Chính thức (Hải Phòng)</option>
+              <option value="SEI - Chính Thức (Hà Nội)">3. SEI - Chính thức (Hà Nội)</option>
+              <option value="Foxconn - Chính Thức (Quảng Ninh)">4. Foxconn - Chính thức (Quảng Ninh)</option>
+            </select>
+
+            <!-- Hoặc chạm chọn nhanh bằng 4 nút -->
+            <p style="font-size: 13px; color: #64748b; margin-top: 8px; margin-bottom: 6px; font-weight: 600;">
+              ⚡ Hoặc chạm chọn nhanh 4 vị trí tuyển gấp nhiều nhất:
+            </p>
+            <div class="company-chips-grid">
+              <button type="button" class="company-chip-btn" data-val="Pegatron - Thời Vụ (Hải Phòng)" onclick="selectCompanyChip('Pegatron - Thời Vụ (Hải Phòng)')">
+                ⚡ Pegatron HP (Thời vụ)
+              </button>
+              <button type="button" class="company-chip-btn" data-val="Pegatron - Chính Thức (Hải Phòng)" onclick="selectCompanyChip('Pegatron - Chính Thức (Hải Phòng)')">
+                ⭐ Pegatron HP (Chính thức)
+              </button>
+              <button type="button" class="company-chip-btn" data-val="SEI - Chính Thức (Hà Nội)" onclick="selectCompanyChip('SEI - Chính Thức (Hà Nội)')">
+                ⭐ SEI Hà Nội (Chính thức)
+              </button>
+              <button type="button" class="company-chip-btn" data-val="Foxconn - Chính Thức (Quảng Ninh)" onclick="selectCompanyChip('Foxconn - Chính Thức (Quảng Ninh)')">
+                ⭐ Foxconn (Quảng Ninh)
+              </button>
+            </div>
+          </div>
+
+          <!-- Họ và tên -->
+          <div class="form-group">
+            <label for="fullName">Họ và Tên của bạn: <span class="required">*</span></label>
+            <input type="text" id="fullName" class="form-control" placeholder="Ví dụ: Nguyễn Văn An" required>
+          </div>
+
+          <!-- Số điện thoại -->
+          <div class="form-group">
+            <label for="phoneNumber">Số điện thoại liên hệ: <span class="required">*</span></label>
+            <input type="tel" id="phoneNumber" class="form-control" placeholder="Ví dụ: 0972 642 218" pattern="[0-9]{10}" title="Vui lòng nhập đúng 10 chữ số điện thoại" required>
+          </div>
+
+          <!-- Số CCCD (ĐÃ ĐƯA NOTE LÊN NGAY SAU DÒNG NÀY THEO YÊU CẦU) -->
+          <div class="form-group">
+            <label for="cccdNumber">Số Căn cước công dân (12 số): <span class="required">*</span></label>
+            <input type="tel" id="cccdNumber" class="form-control" placeholder="Nhập đủ 12 chữ số CCCD (Ví dụ: 001234567890)" maxlength="12" pattern="[0-9]{12}" title="Vui lòng nhập đủ 12 số CCCD" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            
+            <!-- CÂU NOTE BẢO MẬT ĐÃ SỬA VÀ ĐẶT NGAY DƯỚI DÒNG CCCD -->
+            <div class="cccd-security-note">
+              <span class="note-icon">🔒</span>
+              <span class="note-text">Số CCCD của bạn chỉ dùng để đăng ký phỏng vấn, đối chiếu thông tin khi tiếp đón và cam kết bảo mật 100%.</span>
+            </div>
+          </div>
+
+          <!-- Ngày & Giờ phỏng vấn (ĐỊNH DẠNG 24H TỪ 08:00 ĐẾN 17:00) -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="interviewDateDisplay">Chọn ngày phỏng vấn: <span class="required">*</span></label>
+              
+              <div class="date-picker-box">
+                <div class="date-input-row" onclick="openCalendarModal()" title="Bấm để mở lịch chọn ngày">
+                  <div class="date-input-col">
+                    <div class="custom-date-trigger">
+                      <span class="cal-icon-prefix">📅</span>
+                      <input type="text" id="interviewDateDisplay" class="form-control" readonly placeholder="Bấm vào để chọn ngày..." required>
+                      <input type="hidden" id="interviewDate" name="interviewDate" required>
+                    </div>
+                  </div>
+                  <div class="date-preview-badge" id="datePreviewBadge">
+                    <span class="badge-label">Lịch hẹn</span>
+                    <strong id="dateBadgeText">Chưa chọn</strong>
+                  </div>
+                </div>
+
+                <!-- CÁC NÚT CHỌN NHANH NGÀY ĐI PHỎNG VẤN TIỆN LỢI CHO ỨNG VIÊN -->
+                <div class="date-quick-pills">
+                  <button type="button" class="date-pill-btn" onclick="selectQuickDay(0)">⚡ Hôm nay</button>
+                  <button type="button" class="date-pill-btn" onclick="selectQuickDay(1)">⚡ Ngày mai</button>
+                  <button type="button" class="date-pill-btn" onclick="selectQuickDay(2)">⚡ Ngày kia</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Giờ phỏng vấn (24h: 08:00 - 17:00): <span class="required">*</span></label>
+              
+              <div class="time-24h-picker-box">
+                <div class="time-select-row">
+                  <div class="time-select-col">
+                    <span class="time-col-title">Giờ (24h)</span>
+                    <div class="time-picker-custom-btn">
+                      <span class="time-btn-val" id="hourDisplayVal">08:00</span>
+                      <span class="time-btn-arrow">▾</span>
+                      <select id="interviewHour" class="time-native-select" onchange="updateTimeSelection()">
+                        <option value="08">08:00</option>
+                        <option value="09">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <span class="time-sep">:</span>
+
+                  <div class="time-select-col">
+                    <span class="time-col-title">Phút</span>
+                    <div class="time-picker-custom-btn">
+                      <span class="time-btn-val" id="minuteDisplayVal">00</span>
+                      <span class="time-btn-arrow">▾</span>
+                      <select id="interviewMinute" class="time-native-select" onchange="updateTimeSelection()">
+                        <option value="00">00</option>
+                        <option value="05">05</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+                        <option value="50">50</option>
+                        <option value="55">55</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="time-preview-badge">
+                    <span class="badge-label">Đã chọn</span>
+                    <strong id="timeBadgeText">08:00</strong>
+                  </div>
+                </div>
+
+                <div class="time-hint">
+                  ⏰ Bấm chọn nhanh khung giờ phổ biến bên dưới:
+                </div>
+
+                <!-- Nút chọn nhanh mốc giờ 24h -->
+                <div class="time-quick-pills">
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('08', '00')">08:00</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('08', '30')">08:30</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('09', '00')">09:00</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('10', '00')">10:00</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('13', '30')">13:30</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('14', '00')">14:00</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('15', '30')">15:30</button>
+                  <button type="button" class="time-pill-btn" onclick="set24hTime('16', '30')">16:30</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nút nộp hồ sơ -->
+          <button type="submit" class="btn-submit-form">
+            🚀 XÁC NHẬN ĐĂNG KÝ PHỎNG VẤN NGAY
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>VĂN PHÒNG TIẾP NHẬN HỒ SƠ TUYỂN DỤNG - SK VIỆT NAM</h4>
+        <div class="footer-info-item">
+          <span>📞</span>
+          <span><strong>Hotline hỗ trợ:</strong> <a href="tel:0972642218">0972 642 218</a> (Hỗ trợ từ 07:00 - 21:00 hằng ngày).</span>
+        </div>
+        <div class="footer-info-item">
+          <span>💬</span>
+          <span><strong>Zalo tiếp nhận & tư vấn:</strong> <a href="https://zalo.me/0972642218" target="_blank">0972 642 218</a> (Cán bộ tuyển dụng).</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="color: white; margin-bottom: 12px;">CAM KẾT CỦA SK VIỆT NAM</h4>
+        <p style="font-size: 13.5px; line-height: 1.7; color: #94a3b8;">
+          • Tuyệt đối không thu bất kỳ khoản phí nộp hồ sơ nào.<br>
+          • Phỏng vấn trực tiếp tại nhà máy, có kết quả ngay.<br>
+          • Có xe đưa đón công nhân và hỗ trợ chỗ ở ký túc xá.
+        </p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      © 2026 Bản quyền thuộc về SK Việt Nam. Thiết kế tối ưu chuyển đổi bởi Mai Hồng Nhung.
+    </div>
+  </footer>
+
+  <!-- THANH NÚT BẤM DƯỚI ĐÁY CHO ĐIỆN THOẠI (MOBILE STICKY BAR) -->
+  <div class="mobile-bottom-bar">
+    <a href="https://zalo.me/0972642218" target="_blank" class="btn-mobile btn-mobile-zalo">
+      💬 Nhắn Zalo
+    </a>
+    <a href="#form-dang-ky" class="btn-mobile btn-mobile-apply">
+      ✍️ Đi Làm Ngay
+    </a>
+  </div>
+
+  <!-- MODAL BỘ LỊCH CHUYÊN DỤNG (TỰ ĐỘNG NHẢY RA NGOÀI & CHỮ XONG CẠNH ĐẶT LẠI) -->
+  <div class="calendar-modal-overlay" id="calendarModal" onclick="handleCalendarOverlayClick(event)">
+    <div class="calendar-card" onclick="event.stopPropagation()">
+      <div class="calendar-header">
+        <button type="button" class="calendar-nav-btn" onclick="changeCalendarMonth(-1)">‹</button>
+        <div class="calendar-month-title" id="calMonthTitle">Tháng 10 năm 2026</div>
+        <button type="button" class="calendar-nav-btn" onclick="changeCalendarMonth(1)">›</button>
+      </div>
+
+      <div class="calendar-weekdays">
+        <span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
+      </div>
+
+      <div class="calendar-days-grid" id="calDaysGrid">
+        <!-- Render ngày bằng JavaScript -->
+      </div>
+
+      <!-- ĐÁY LỊCH: NÚT ĐẶT LẠI VÀ CHỮ XONG NẰM NGANG NHAU 100% -->
+      <div class="calendar-footer">
+        <button type="button" class="btn-cal-reset" onclick="resetCalendarDate()">Đặt lại</button>
+        <button type="button" class="btn-cal-done" onclick="closeCalendarModal(true)">Xong</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL BÁO THÀNH CÔNG -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">✓</div>
+      <h3>ĐĂNG KÝ THÀNH CÔNG!</h3>
+      <p>Chúc mừng bạn đã gửi hồ sơ phỏng vấn thành công tới SK Việt Nam. Chúng tôi đã ghi nhận thông tin của bạn.</p>
+      
+      <div class="modal-details" id="submittedDetails">
+        <!-- Thông tin tóm tắt hiển thị bằng Javascript -->
+      </div>
+
+      <p style="font-size: 13px; color: #b91c1c; font-weight: 600; margin-bottom: 16px;">
+        ⚠️ Lưu ý: Vui lòng để ý điện thoại, cán bộ tuyển dụng SK Việt Nam sẽ gọi xác nhận trong vòng 30 phút!
+      </p>
+
+      <button type="button" class="btn-close-modal" onclick="closeModal()">Đã Hiểu & Đóng</button>
+    </div>
+  </div>
+
+  <!-- DỮ LIỆU CÔNG VIỆC VÀ BỘ LỌC ĐA NĂNG SK VIỆT NAM -->
+  <script src="jobs_data.js"></script>
+  <script src="jobs_engine.js"></script>
+
+  <!-- JAVASCRIPT XỬ LÝ -->
+  <script>
+    // =========================================================================
+    // CẤU HÌNH ĐƯỜNG LINK GOOGLE SHEETS CỦA BẠN NHUNG
+    // Dán link Web App (Google Apps Script) mà bạn vừa triển khai vào giữa 2 dấu ngoặc kép:
+    // =========================================================================
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxYFwhzpZihdyrsB1kaI3lFs7Vv_ijD78PvvI-GM5BReXenTnslnxWZpz31vS3obqjSqw/exec"; 
+
+    // Thiết lập ngày phỏng vấn và khởi tạo bộ lịch khi tải trang
+    document.addEventListener("DOMContentLoaded", () => {
+      initCalendar();
+      updateTimeSelection();
+      if (typeof initJobsApp === 'function') {
+        initJobsApp();
+      }
+    });
+
+    // =========================================================================
+    // HỆ THỐNG BỘ LỊCH CHUYÊN DỤNG (TỰ ĐỘNG NHẢY RA NGOÀI & CHỮ XONG CẠNH ĐẶT LẠI)
+    // =========================================================================
+    let currentCalDate = new Date();
+    let selectedInterviewDate = new Date();
+
+    function initCalendar() {
+      const today = new Date();
+      currentCalDate = new Date(today.getFullYear(), today.getMonth(), 1);
+      selectedInterviewDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      applySelectedDate(selectedInterviewDate);
+    }
+
+    function openCalendarModal() {
+      currentCalDate = new Date(selectedInterviewDate.getFullYear(), selectedInterviewDate.getMonth(), 1);
+      renderCalendar();
+      document.getElementById("calendarModal").classList.add("active");
+    }
+
+    function closeCalendarModal(scrollNext = true) {
+      document.getElementById("calendarModal").classList.remove("active");
+      if (scrollNext) {
+        const timeBox = document.querySelector(".time-24h-picker-box");
+        if (timeBox) {
+          timeBox.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    }
+
+    function handleCalendarOverlayClick(e) {
+      if (e.target.id === "calendarModal") {
+        closeCalendarModal(false);
+      }
+    }
+
+    function changeCalendarMonth(offset) {
+      currentCalDate.setMonth(currentCalDate.getMonth() + offset);
+      renderCalendar();
+    }
+
+    function renderCalendar() {
+      const monthTitle = document.getElementById("calMonthTitle");
+      const grid = document.getElementById("calDaysGrid");
+      if (!monthTitle || !grid) return;
+
+      const year = currentCalDate.getFullYear();
+      const month = currentCalDate.getMonth();
+
+      monthTitle.innerText = `Tháng ${month + 1} năm ${year}`;
+      grid.innerHTML = "";
+
+      const firstDayOfMonth = new Date(year, month, 1);
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      let startDay = firstDayOfMonth.getDay() - 1;
+      if (startDay === -1) startDay = 6;
+
+      for (let i = 0; i < startDay; i++) {
+        const empty = document.createElement("div");
+        empty.className = "cal-day-cell empty";
+        grid.appendChild(empty);
+      }
+
+      const today = new Date();
+      const todayNorm = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const cell = document.createElement("div");
+        cell.className = "cal-day-cell";
+        cell.innerText = day;
+
+        const cellDate = new Date(year, month, day);
+
+        if (cellDate < todayNorm) {
+          cell.classList.add("disabled");
+        } else {
+          if (cellDate.getTime() === todayNorm.getTime()) {
+            cell.classList.add("today");
+          }
+
+          if (selectedInterviewDate && 
+              cellDate.getFullYear() === selectedInterviewDate.getFullYear() &&
+              cellDate.getMonth() === selectedInterviewDate.getMonth() &&
+              cellDate.getDate() === selectedInterviewDate.getDate()) {
+            cell.classList.add("selected");
+          }
+
+          // KHI ỨNG VIÊN BẤM VÀO NGÀY: TỰ ĐỘNG CHỌN VÀ NHẢY RA NGOÀI NGAY LẬP TỨC (sau 180ms)
+          cell.onclick = () => {
+            selectCalendarDay(year, month, day);
+          };
+        }
+
+        grid.appendChild(cell);
+      }
+    }
+
+    function selectCalendarDay(year, month, day) {
+      selectedInterviewDate = new Date(year, month, day);
+      renderCalendar();
+      applySelectedDate(selectedInterviewDate);
+
+      // TỰ ĐỘNG NHẢY RA NGOÀI (ĐÓNG LỊCH) NGAY LẬP TỨC
+      setTimeout(() => {
+        closeCalendarModal(true);
+      }, 180);
+    }
+
+    function applySelectedDate(d) {
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      const dd = String(d.getDate()).padStart(2, '0');
+      const val = `${yyyy}-${mm}-${dd}`;
+
+      const hiddenInput = document.getElementById("interviewDate");
+      const displayInput = document.getElementById("interviewDateDisplay");
+      const badgeText = document.getElementById("dateBadgeText");
+
+      const daysOfWeek = ["Chủ Nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"];
+      const dayName = daysOfWeek[d.getDay()];
+
+      if (hiddenInput) hiddenInput.value = val;
+      if (displayInput) displayInput.value = `${dayName}, ngày ${dd}/${mm}/${yyyy}`;
+      if (badgeText) badgeText.innerText = `${dayName}, ${dd}/${mm}`;
+    }
+
+    // Nút Đặt lại ở đáy lịch: đưa về ngày hôm nay
+    function resetCalendarDate() {
+      const today = new Date();
+      selectedInterviewDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      currentCalDate = new Date(today.getFullYear(), today.getMonth(), 1);
+      renderCalendar();
+      applySelectedDate(selectedInterviewDate);
+    }
+
+    // Chọn nhanh 1 chạm (0: Hôm nay, 1: Ngày mai, 2: Ngày kia)
+    function selectQuickDay(offset) {
+      const d = new Date();
+      d.setDate(d.getDate() + offset);
+      selectedInterviewDate = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+      applySelectedDate(selectedInterviewDate);
+    }
+
+    // Xử lý chọn công ty qua Chip nút bấm
+    function selectCompanyChip(val) {
+      const select = document.getElementById("targetCompany");
+      select.value = val;
+      updateActiveChip(val);
+    }
+
+    function handleSelectChange(val) {
+      updateActiveChip(val);
+    }
+
+    function updateActiveChip(val) {
+      const chips = document.querySelectorAll(".company-chip-btn");
+      chips.forEach(chip => {
+        if (chip.getAttribute("data-val") === val) {
+          chip.classList.add("active");
+        } else {
+          chip.classList.remove("active");
+        }
+      });
+    }
+
+    // Tự động chọn vị trí và cuộn mượt xuống Form khi bấm nút tại các Job Card
+    function selectJobAndScroll(jobName) {
+      const select = document.getElementById("targetCompany");
+      if (select) {
+        let matched = false;
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === jobName || select.options[i].text.includes(jobName)) {
+            select.selectedIndex = i;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) {
+          const opt = new Option(jobName, jobName, true, true);
+          select.add(opt);
+          select.value = jobName;
+        }
+      }
+      updateActiveChip(jobName);
+
+      // Cài đặt giờ 08:00 sáng mặc định
+      set24hTime("08", "00");
+
+      const formBox = document.getElementById("form-dang-ky");
+      if (formBox) {
+        formBox.scrollIntoView({ behavior: "smooth", block: "start" });
+        const box = document.querySelector(".company-select-box");
+        if (box) {
+          box.classList.add("highlight-pulse");
+          setTimeout(() => box.classList.remove("highlight-pulse"), 2000);
+        }
+      }
+    }
+
+    // Xử lý bộ chọn giờ 24h
+    function set24hTime(h, m) {
+      const hourEl = document.getElementById("interviewHour");
+      const minEl = document.getElementById("interviewMinute");
+      if (hourEl) hourEl.value = h;
+      if (minEl) minEl.value = m;
+      updateTimeSelection();
+    }
+
+    function updateTimeSelection() {
+      const hourEl = document.getElementById("interviewHour");
+      const minEl = document.getElementById("interviewMinute");
+      const h = hourEl ? hourEl.value : "08";
+      const m = minEl ? minEl.value : "00";
+
+      const hourDisplay = document.getElementById("hourDisplayVal");
+      const minuteDisplay = document.getElementById("minuteDisplayVal");
+      const badgeText = document.getElementById("timeBadgeText");
+
+      if (hourDisplay) hourDisplay.innerText = `${h}:00`;
+      if (minuteDisplay) minuteDisplay.innerText = m;
+      if (badgeText) badgeText.innerText = `${h}:${m}`;
+    }
+
+    function getSelected24hTime() {
+      const hourEl = document.getElementById("interviewHour");
+      const minEl = document.getElementById("interviewMinute");
+      const h = hourEl ? hourEl.value : "08";
+      const m = minEl ? minEl.value : "00";
+      return `${h}:${m}`;
+    }
+
+    // Xử lý gửi Form
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+
+      const submitBtn = document.querySelector(".btn-submit-form");
+      const originalBtnText = submitBtn.innerHTML;
+
+      const company = document.getElementById("targetCompany").value;
+      const name = document.getElementById("fullName").value.trim();
+      const phone = document.getElementById("phoneNumber").value.trim();
+      const cccd = document.getElementById("cccdNumber").value.trim();
+      const date = document.getElementById("interviewDate").value;
+      const time = getSelected24hTime();
+
+      if (!company) {
+        alert("Vui lòng chọn 1 trong 4 công ty ứng tuyển!");
+        document.getElementById("targetCompany").focus();
+        return;
+      }
+
+      if (cccd.length !== 12) {
+        alert("Vui lòng nhập đủ 12 số Căn cước công dân (CCCD)!");
+        document.getElementById("cccdNumber").focus();
+        return;
+      }
+
+      const payload = {
+        fullName: name,
+        phoneNumber: phone,
+        cccdNumber: cccd,
+        targetCompany: company,
+        interviewDate: date,
+        interviewTime: time
+      };
+
+      if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.trim() !== "") {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "⏳ Đang gửi hồ sơ lên Google Sheet SK Việt Nam...";
+
+        try {
+          await fetch(GOOGLE_SCRIPT_URL.trim(), {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8"
+            },
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          console.warn("Lỗi gửi dữ liệu:", err);
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+      } else {
+        console.log("Chế độ xem thử. Dữ liệu nộp:", payload);
+      }
+
+      // Hiển thị tóm tắt vào modal
+      const detailsBox = document.getElementById("submittedDetails");
+      detailsBox.innerHTML = `
+        <p>🏢 <strong>Công ty:</strong> <span style="color:#b91c1c;font-weight:700;">${company}</span></p>
+        <p>👤 <strong>Họ tên:</strong> ${name}</p>
+        <p>📞 <strong>SĐT:</strong> ${phone}</p>
+        <p>🪪 <strong>Số CCCD:</strong> ${cccd}</p>
+        <p>📅 <strong>Lịch hẹn:</strong> ${time} - Ngày ${date}</p>
+        ${!GOOGLE_SCRIPT_URL ? '<p style="color:#f59e0b;font-size:12px;margin-top:6px;"><em>(Lưu ý: Bạn đang ở chế độ xem thử. Khi dán link Google Sheets, data sẽ lưu vào bảng tính thật!)</em></p>' : '<p style="color:#16a34a;font-size:12px;margin-top:6px;"><strong>✓ Đã tự động lưu vào Google Sheets SK Việt Nam!</strong></p>'}
+      `;
+
+      document.getElementById("successModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("successModal").style.display = "none";
+      document.getElementById("recruitmentForm").reset();
+      updateActiveChip("");
+      set24hTime("08", "00");
+      initCalendar();
+    }
+
+    // Tự động hiện thanh dính đáy trên mobile chỉ khi người dùng cuộn qua khỏi Hero
+    function handleScrollBottomBar() {
+      const heroSection = document.querySelector('.hero');
+      const bottomBar = document.querySelector('.mobile-bottom-bar');
+      if (!heroSection || !bottomBar) return;
+      
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+      if (heroBottom < 100) {
+        bottomBar.classList.add('is-visible');
+      } else {
+        bottomBar.classList.remove('is-visible');
+      }
+    }
+    window.addEventListener('scroll', handleScrollBottomBar, { passive: true });
+    window.addEventListener('DOMContentLoaded', handleScrollBottomBar);
+  </script>
+</body>
+</html>
